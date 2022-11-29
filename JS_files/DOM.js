@@ -1,4 +1,4 @@
-import dictionary from "./morse_dictionary";
+import { dictionary } from "./JS_files/morse_dictionary";
 
 // const dictionary = {
 //     "A": ".-",

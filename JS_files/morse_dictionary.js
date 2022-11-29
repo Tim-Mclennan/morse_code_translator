@@ -1,4 +1,4 @@
-export const dictionary = {
+let dictionary = {
     "A": ".-",
     "B": "-...",
     "C": "-.-.",
@@ -26,4 +26,4 @@ export const dictionary = {
     "Z": "--.."
  }
 
-//  export default dictionary;
+ export default dictionary;
