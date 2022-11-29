@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <base href=".">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">English/Morse Code Translator</h1>
+    </header>
+    <main class="main">
+        <div class="main__input">
+            <label class="main__input__label" for="main__input__textarea">
+                <p class="main__input__label--text">Place your text in this box:</p>
+            </label>
+            <textarea class="main__input__textarea" placeholder="Place your text here" id="main__input__textarea" name="main__input__textarea" rows="5" cols="50"></textarea>
+        </div>
+        <button class="main__btn--translate">Translate</button>
+        <div class="main__output">
+            <p class="main__output--text">Output:</p>
+            <textarea class="main__output__textarea" placeholder="Here will be your output" id="main__output__textarea" name="main__output__textarea" rows="5" cols="50"></textarea>
+        </div>
+        <button class="main__btn--swap">Swap</button>
+    </main>
+
+    <script type="module" src="JS_files/DOM.js"></script>
+    <script type="module" src="JS_files/morse_dictionary.js" ></script>
+    <script type="module" src="JS_files/swap.js"></script>
+</body>
+</html>
