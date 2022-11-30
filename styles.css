@@ -37,15 +37,20 @@
   border-radius: 10px;
   padding: 5px;
 }
-.main__btn--translate {
+.main__btn__container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.main__btn__container--translate {
   height: 2rem;
-  width: 10rem;
+  width: 12rem;
   border: 2px solid black;
   padding: 5px;
 }
-.main__btn--swap {
+.main__btn__container--swap {
   height: 2rem;
-  width: 10rem;
+  width: 12rem;
   border: 2px solid black;
   padding: 5px;
 }

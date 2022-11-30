@@ -29,6 +29,7 @@
     height: 100vh;
 
     &__input {
+            
         &__textarea{
             border: 5px $border-colour solid; 
             outline: none;
@@ -45,19 +46,27 @@
         } 
     }
     &__btn {
-        &--translate{
-            height: 2rem;
-            width: 10rem;
-            border: 2px solid black;
-            padding: 5px;
-        }
 
-        &--swap {
-            height: 2rem;
-            width: 10rem;
-            border: 2px solid black;
-            padding: 5px;
+        &__container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            &--translate{
+                height: 2rem;
+                width: 12rem;
+                border: 2px solid black;
+                padding: 5px;
+            }
+            &--swap {
+             height: 2rem;
+                width: 12rem;
+                border: 2px solid black;
+                padding: 5px;
+            }
         }
+        
+
        
     }
 }
