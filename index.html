@@ -14,24 +14,28 @@
     </header>
     <main class="main">
         <div class="main__input">
-            <label class="main__input__label" for="main__input__textarea">
+            <div class="main__input__label">
                 <p class="main__input__label--text">Place your text in this box:</p>
-            </label>
-            <textarea class="main__input__textarea" placeholder="Place your text here" id="main__input__textarea" name="main__input__textarea" rows="5" cols="50"></textarea>
+                <p class="main__input__label--text">Place your morse code in this box:</p>
+            </div>
+            <div lass="main__input__textarea--box">
+                <textarea class="main__input__textarea--box--text" placeholder="Place your text here" id="main__input__textarea--box--text" name="main__input__textarea--box--text" rows="5" cols="20">oh hi there</textarea>
+                <b>OR</b>
+                <textarea class="main__input__textarea--box--code" placeholder="Place your text here" id="main__input__textarea--box--code" name="main__input__textarea--box--code" rows="5" cols="20"></textarea>
+            </div>
         </div>
         <div class="main__btn__container">
-            <button class="main__btn__container--translate">Translate</button>
-            <button class="main__btn__container--swap">Swap</button>
+            <button class="main__btn__container--translate main__btn__container--translate--english">Translate English</button>
+            <button class=" main__btn__container--translate main__btn__container--translate--morsecode">Translate Morse Code</button>
         </div>
 
         <div class="main__output">
             <p class="main__output--text">Output:</p>
-            <textarea class="main__output__textarea" placeholder="Here will be your output" id="main__output__textarea" name="main__output__textarea" rows="5" cols="50"></textarea>
+            <textarea class="main__output__textarea" placeholder="Here will be your output" id="main__output__textarea" name="main__output__textarea" rows="5" cols="40"></textarea>
         </div>
     </main>
-
+    
     <script type="module" src="js/DOM.js"></script>
-    <!-- <script type="module" src="JS_files/morse_dictionary.js" ></script>
-    <script type="module" src="JS_files/swap.js"></script> -->
+    <script type="module" src="js/swap.js"></script> -->
 </body>
 </html>

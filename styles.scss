@@ -1,4 +1,4 @@
-@import "scss_files/themes";
+@import "scss-files/themes";
 
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -29,12 +29,34 @@
     height: 100vh;
 
     &__input {
+        &__label {
+            display: flex;
+            gap: 180px;
+            font-weight: 500;
+        }
             
         &__textarea{
-            border: 5px $border-colour solid; 
-            outline: none;
-            border-radius: 10px;
-            padding: 5px;
+            &--box {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+   
+
+                &--text {
+                    border: 5px $border-colour solid; 
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+                &--code {
+                    border: 5px $border-colour solid; 
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 5px;
+
+                }
+            }
+
         }
     }
     &__output {
@@ -50,16 +72,10 @@
         &__container {
             display: flex;
             flex-direction: row;
-            gap: 20px;
+            gap: 100px;
 
             &--translate{
                 height: 2rem;
-                width: 12rem;
-                border: 2px solid black;
-                padding: 5px;
-            }
-            &--swap {
-             height: 2rem;
                 width: 12rem;
                 border: 2px solid black;
                 padding: 5px;
