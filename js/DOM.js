@@ -6,15 +6,15 @@ let translateMorsecodeBtn = document.querySelector('.main__btn__container--trans
 
 
 translateEnglishBtn.addEventListener("click", () => {
-
     if (typeof textInput === undefined) {
-        return alert("Please enter text/morse code to translate");
+        return alert("Please enter text, numbers or characters to translate");
     }
-
     return textToMorse();
 });
 
-
 translateMorsecodeBtn.addEventListener("click", () => {
+    if (typeof codeInput === undefined) {
+        return alert("Please enter morse code to translate");
+    }
     return morseToText();
 });
