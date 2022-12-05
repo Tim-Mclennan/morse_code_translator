@@ -40,7 +40,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-   
+                justify-content: center;   
 
                 &--text {
                     border: 5px $border-colour solid; 

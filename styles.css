@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .main__input__textarea--box--text {
   border: 5px rgb(177, 0, 0) solid;
