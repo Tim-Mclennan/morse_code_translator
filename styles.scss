@@ -40,20 +40,22 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;   
+                justify-content: center;
+                gap: 50px;   
 
                 &--text {
                     border: 5px $border-colour solid; 
                     outline: none;
                     border-radius: 10px;
                     padding: 5px;
+                    width: 200px;
                 }
                 &--code {
                     border: 5px $border-colour solid; 
                     outline: none;
                     border-radius: 10px;
                     padding: 5px;
-
+                    width: 200px;
                 }
             }
 

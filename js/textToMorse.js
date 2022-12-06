@@ -1,11 +1,17 @@
 import dictionary from "./morseDictionary.js";
 
-let textInput = document.querySelector('.main__input__textarea--box--text').value;
-let output = document.querySelector('.main__output__textarea').value;
-// let translateEnglishBtn = document.querySelector('.main__btn__container--translate--english');
+let textInput = document.querySelector('.main__input__textarea--box--text');
 
 export function textToMorse() {
-    let textArr = textInput.toUpperCase().split("");
+    console.log(textInput);
+    let textInputValue = textInput.value;
+
+    if (textInputValue === "") {
+        return alert("Please enter text/morse code to translate");
+    }
+
+    let textArr = textInputValue.toUpperCase().split("");
+    console.log(textArr);
     let textToMorseArr = textArr.map((letter) => {
         if (dictionary[letter]){
             return dictionary[letter];
@@ -14,18 +20,9 @@ export function textToMorse() {
         }
     })
 
-    output = textToMorseArr.join(" ");
+    let output = textToMorseArr.join(" ");
     document.querySelector('.main__output__textarea').value = output;
     console.log(output)
-    console.log("this works");
-}
+};
 
 
-    // translateEnglishBtn.addEventListener("click", () => {
-
-    //     if (typeof textInput === undefined) {
-    //         return alert("Please enter text/morse code to translate");
-    //     }
-
-    //     return textToMorse();
-    // });

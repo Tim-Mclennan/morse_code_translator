@@ -1,7 +1,6 @@
 import dictionary from "./morseDictionary.js";
 
-let codeInput = document.querySelector('.main__input__textarea--box--code').value;
-let output = document.querySelector('.main__output__textarea').value;
+let codeInput = document.querySelector('.main__input__textarea--box--code');
 
 let reverseDictionary = Object.entries(dictionary).reduce((acc, curr) => {
     acc[curr[1]] = curr[0];
@@ -10,7 +9,15 @@ let reverseDictionary = Object.entries(dictionary).reduce((acc, curr) => {
 
 
 export function morseToText() {
-    let morseArr = codeInput.split(' '); 
+
+    let codeInputValue = codeInput.value;
+
+    if (codeInput === undefined) {
+        return alert("Please enter text/morse code to translate");
+    }
+
+
+    let morseArr = codeInputValue.split(' '); 
     console.log(morseArr);
     let morseToTextArr = morseArr.map((code) => {
         
@@ -22,7 +29,7 @@ export function morseToText() {
     });
     console.log(morseToTextArr);
 
-    output = morseToTextArr.join(" ");
+    let output = morseToTextArr.join(" ");
     document.querySelector('.main__output__textarea').value = output.toLowerCase();
     console.log(output)
 
